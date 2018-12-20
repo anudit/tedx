@@ -716,7 +716,7 @@
 [08] TESTMONIAL
 =========================================================================*/
 .testmonialSec{
-    background: url(../img/2.png) no-repeat fixed center center/cover;
+    background: url(../img/2.webp) no-repeat fixed center center/cover;
     margin-bottom: 123px;
 }
 #testmonialCaro{
@@ -823,7 +823,7 @@
 [10] OUR BLOG
 =========================================================================*/
 .blogSection{
-    background: url(../img/3.jpg) no-repeat fixed center center/cover;
+    background: url(../img/3.webp) no-repeat fixed center center/cover;
     padding: 173px 0 140px;
     margin-top: -123px;
 }
@@ -1384,7 +1384,7 @@
     position: relative;
 }
 .perelaxBg1 {
-    background: rgba(0, 0, 0, 0) url("../images/bg/p1.png") no-repeat center 0 ;
+    background: rgba(0, 0, 0, 0) url("../images/bg/p1.jpg") no-repeat center 0 ;
     left: 0;
     position: absolute;
     right: 0;
@@ -1394,7 +1394,7 @@
     width: auto;
 }
 .perelaxBg2 {
-    background: rgba(0, 0, 0, 0) url("../images/bg/p2.png") no-repeat center 0 ;
+    background: rgba(0, 0, 0, 0) url("../images/bg/p2.jpg") no-repeat center 0 ;
     left: 0;
     position: absolute;
     right: 0;
@@ -1404,7 +1404,7 @@
     width: auto;
 }
 .perelaxBg3 {
-    background: rgba(0, 0, 0, 0) url("../images/bg/p3.png") no-repeat center 0 ;
+    background: rgba(0, 0, 0, 0) url("../images/bg/p3.jpg") no-repeat center 0 ;
     left: 0;
     position: absolute;
     right: 0;
@@ -1414,7 +1414,7 @@
     width: auto;
 }
 .perelaxBg4 {
-    background: rgba(0, 0, 0, 0) url("../images/bg/p4.png") no-repeat scroll center 0;
+    background: rgba(0, 0, 0, 0) url("../images/bg/p4.jpg") no-repeat scroll center 0;
     height: 170px;
     left: 0;
     margin: auto;
@@ -1424,7 +1424,7 @@
     width: auto;
 }
 .perelaxBg5 {
-    background: rgba(0, 0, 0, 0) url("../images/bg/p5.png") no-repeat scroll center 0;
+    background: rgba(0, 0, 0, 0) url("../images/bg/p5.jpg") no-repeat scroll center 0;
     height: 486px;
     left: 0;
     margin: auto;
