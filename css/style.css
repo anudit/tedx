@@ -1,36 +1,3 @@
-/*
-  Theme Name: Bespoke - Creative One Page HTML5 Template 
-  Theme URL: http://nasfactor.com/themes/bespoke/
-  Author: nasirwd
-  Author URI: http://nasfactor.com/
-  Description: Bespoke - Creative One Page HTML5 Template 
-  Version: 1.0
-*/
-/*=======================================================================
-[Table of contents]
-=========================================================================
-[01] HEADER
-[02] SLIDER
-[03] ABOUT
-[04] TEAM
-[05] WHAT WE DO
-[06] OUR WORK
-[07] CHOOSE US
-[08] TESTMONIAL
-[09] OUR CLIENT
-[10] OUR BLOG
-[11] WHAT SAY
-[12] CONTACT
-[13] FOOTER
-[14] SUBSCRIPTION POPUP
-[15] BACK TO TOP
-[16] HOME TWO
-[17] WORK DETAIL
-[18] BLOG LIST
-[19] BLOG DETAIL
-[20] HOME THREE
-==========================================================================*/
-
 /*=======================================================================
 [01] HEADER
 =========================================================================*/
@@ -398,7 +365,7 @@
     margin-bottom: 12px;
 }
 .ourServices {
-    margin-top: -110px;
+    margin-top: 50px;;
 }
 .singleService {
     background: #fff;
