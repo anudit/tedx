@@ -37,6 +37,5 @@ function saveNominateRec(time, name, email, nominated_name, reason) {
 
 function recSaved() {
     document.getElementById("mynominateform").reset();
-    alert('Done');
-    location.href = 'thanks.html';
+    location.href = './thankyou/index.html';
 }

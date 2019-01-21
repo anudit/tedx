@@ -36,6 +36,5 @@ function savePartnerRec(time, name, email, partner_name, reason) {
 }
 function recSaved() {
     document.getElementById("mypartnerform").reset();
-    alert('Done');
-    location.href = 'thanks.html';
+    location.href = './thankyou/index.html';
 }
