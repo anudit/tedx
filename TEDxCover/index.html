@@ -1,0 +1,57 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="theme-color" content="#ff0000">
+		<title>TEDxBennettUniverisity</title>
+		<script type="text/javascript" src="../js/jquery.js"></script>
+
+	<link href="main.css" rel="stylesheet"></head>
+	<body>
+		<main>
+			<div class="content">
+				<h2 class="content__title">
+					<font style="color:red;font-weight: 800;">TED<sup>x</sup></font>
+					<font style="color:black;font-weight: 600;margin-left:-2vw;">BennettUniversity</font>
+				</h2>
+			</div>
+		</main>
+	</body>
+	<script>
+		function h(){
+			var mobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
+			console.log("Checking..");
+			if (!mobile) {
+			(function() {
+				var po = document.createElement('script');
+				po.type = 'text/javascript';
+				po.async = false;
+				po.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(po, s);
+
+				var po1 = document.createElement('script');
+				po1.type = 'text/javascript';
+				po1.async = false;
+				po1.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(po1, s);
+
+				var po3 = document.createElement('script');
+				po3.type = 'text/javascript';
+				po3.async = false;
+				po3.src = 'main.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(po3, s);
+			})();
+		}
+		}
+		window.onload = function(e){ 
+			console.log("Calling Check");
+			h();
+		}
+		window.addEventListener("resize", h);
+
+	</script>
+</html>
