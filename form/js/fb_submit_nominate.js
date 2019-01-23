@@ -7,26 +7,28 @@ var config = {
     messagingSenderId: "586448899666"
 };
 firebase.initializeApp(config);
-
+var ip = "";
 window.onload = function () {
     document.getElementById('mynominateform').addEventListener("submit", submitnominateForm);
+    $.getJSON('https://api.ipify.org/?format=json', function (data) {
+        ip = data['ip'];
+    });
 }
-
 var nom_rec = firebase.database().ref('nominations');
 
 function getInput(id) {
     return document.getElementById(id).value;
 }
 
-
 function submitnominateForm(e) {
     e.preventDefault();
-    saveNominateRec(new Date().toDateString(), getInput('q1'), getInput('q2'), getInput('q3'), getInput('q4'));
+    saveNominateRec(ip, new Date().toDateString(), getInput('q1'), getInput('q2'), getInput('q3'), getInput('q4'));
     recSaved();
 }
-function saveNominateRec(time, name, email, nominated_name, reason) {
+function saveNominateRec(ip, time, name, email, nominated_name, reason) {
     var newRec = nom_rec.push();
     newRec.set({
+        ip: ip,
         time: time,
         name: name,
         email: email,
