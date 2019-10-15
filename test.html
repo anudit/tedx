@@ -1,0 +1,40 @@
+<!-- <button id="rzp-button1">Pay</button>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+var options = {
+    "key": "rzp_test_6zUNktRaiVqtaV",
+    "currency": "INR",
+    "name": "TEDxBennettUniversity",
+    "description": "",
+    "image": "https://example.com/your_logo",
+    "order_id": "order_DUN4uJSIlQAlYF",
+    "handler": function (response){
+        alert(response.razorpay_payment_id);
+    },
+    "notes": {
+        "address": "note value"
+    },
+    "theme": {
+        "color": "#F37254"
+    }
+};
+var rzp1 = new Razorpay(options);
+document.getElementById('rzp-button1').onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+}
+</script> -->
+<script>
+var data = new FormData();
+data.append("amount", "500");
+data.append("currency", "INR");
+data.append("payment_capture", "1");
+
+var xhr = new XMLHttpRequest();
+xhr.open('POST', "https://rzp_test_6zUNktRaiVqtaV:cZZ7ekhQLPYQXmqB5EbthrLx@api.razorpay.com/v1/orders", true);
+xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+xhr.onload = function () {
+    console.log(this.responseText);
+};
+xhr.send(data);
+</script>
