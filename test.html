@@ -31,10 +31,26 @@ data.append("currency", "INR");
 data.append("payment_capture", "1");
 
 var xhr = new XMLHttpRequest();
-xhr.open('POST', "https://rzp_test_6zUNktRaiVqtaV:cZZ7ekhQLPYQXmqB5EbthrLx@api.razorpay.com/v1/orders", true);
-xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-xhr.onload = function () {
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === 4) {
     console.log(this.responseText);
-};
+  }
+});
+
+xhr.open("POST", "https://rzp_test_6zUNktRaiVqtaV:cZZ7ekhQLPYQXmqB5EbthrLx@api.razorpay.com/v1/orders");
+xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+xhr.setRequestHeader("User-Agent", "PostmanRuntime/7.18.0");
+xhr.setRequestHeader("Accept", "*/*");
+xhr.setRequestHeader("Cache-Control", "no-cache");
+xhr.setRequestHeader("Postman-Token", "a8b71519-04af-4a94-89c4-fa36b2d090fa,7ddcbfb6-1c5f-4e8e-9e80-0a5155da471e");
+xhr.setRequestHeader("Host", "api.razorpay.com");
+xhr.setRequestHeader("Accept-Encoding", "gzip, deflate");
+xhr.setRequestHeader("Authorization", "Basic cnpwX3Rlc3RfNnpVTmt0UmFpVnF0YVY6Y1paN2VraFFMUFlRWG1xQjVFYnRockx4");
+xhr.setRequestHeader("Content-Length", "389");
+xhr.setRequestHeader("Connection", "keep-alive");
+xhr.setRequestHeader("cache-control", "no-cache");
+
 xhr.send(data);
 </script>
