@@ -466,6 +466,11 @@
         overflow-wrap: break-word;
         line-height: 1.2;
     }
+    .abBigtitle1 h1.lead {
+        font-size: 60px;
+        overflow-wrap: break-word;
+        line-height: 1.2;
+    }
     .singleTestm {
         padding-top: 30px;
     }
