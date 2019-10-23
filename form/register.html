@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register | TEDx</title>
+    <meta name="description" content="Register for TEDx Bennett University" />
+    <meta name="keywords" content="ted, tedx, bennett, university, greater, noida" />
+    <meta name="author" content="Anudit Nagar" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-database.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/fb_submit_register.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="fs-form-wrap" id="fs-form-wrap">
+            <div class="fs-title">
+                <h1>Register</h1>
+            </div>
+            <form id="myregisterform" class="fs-form fs-form-full" autocomplete="off">
+                <ol class="fs-fields">
+                    <li>
+                        <label class="fs-field-label fs-anim-upper" for="q1">What's your name?</label>
+                        <input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Jim Moriarty"
+                            required />
+                    </li>
+                    <li>
+                        <label class="fs-field-label fs-anim-upper" for="q2"
+                            data-info="We won't send you spam, we promise...">What's
+                            your email address?</label>
+                        <input class="fs-anim-lower" id="q2" name="q2" type="email"
+                            placeholder="contact@tedxbennettuniversity.com" required />
+                    </li>
+                    <li>
+                        <label class="fs-field-label fs-anim-upper" for="q3">What's your mobile number ?</label>
+                        <input class="fs-anim-lower" id="q3" name="q3" type="text" placeholder="99....." required />
+                    </li>
+                    <li data-input-trigger>
+                        <label class="fs-field-label fs-anim-upper"
+                            data-info="There is a different price for Bennettians" for="q4">Are
+                            you part of Bennett fraternity?</label>
+                        <select class="fs-anim-lower" id="q4" name="q4">
+                            <option value="" disabled selected>Your answer</option>
+                            <option value="yes" data-class="color-588c75">Yes</option>
+                            <option value="no" data-class="color-588c76">No</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <label class="fs-field-label fs-anim-upper" for="q5">How did you come to know about TEDxBennett
+                            University?</label>
+                        <input class="fs-anim-lower" id="q5" name="q5" type="text" placeholder="Example, Instagram"
+                            required />
+                    </li>
+                    <li>
+                        <label class="fs-field-label fs-anim-upper" for="q6">How many tickets would you require?</label>
+                        <input class="fs-anim-lower" id="q6" name="q6" type="number" placeholder="2" min="1" />
+                    </li>
+                </ol><!-- /fs-fields -->
+                <button class="fs-submit" type="submit">Register</button>
+            </form><!-- /fs-form -->
+        </div><!-- /fs-form-wrap -->
+    </div><!-- /container -->
+    <script src="js/classie.js"></script>
+    <script src="js/selectFx.js"></script>
+    <script src="js/fullscreenForm.js"></script>
+    <script>
+        (function () {
+            var formWrap = document.getElementById('fs-form-wrap');
+
+            [].slice.call(document.querySelectorAll('select.cs-select')).forEach(function (el) {
+                new SelectFx(el, {
+                    stickyPlaceholder: false,
+                    onChange: function (val) {
+                        document.querySelector('span.cs-placeholder').style.backgroundColor = val;
+                    }
+                });
+            });
+
+            new FForm(formWrap, {
+                onReview: function () {
+                    classie.add(document.body, 'overview');
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
