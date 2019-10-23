@@ -418,6 +418,7 @@
     top: -118px;
     left: 0;
     right: 0;
+    padding-bottom: 150px;
     background: -moz-linear-gradient(359deg, #ff001f 0%, #ff2f56 100%);
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff001f), color-stop(100%, #ff2f56));
     background: -webkit-linear-gradient(359deg, #ff001f 0%, #ff2f56 100%);

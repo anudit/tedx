@@ -471,6 +471,9 @@
         overflow-wrap: break-word;
         line-height: 1.2;
     }
+    .abcontentT h2.lead{
+        overflow-wrap: break-word;
+    }
     .singleTestm {
         padding-top: 30px;
     }
