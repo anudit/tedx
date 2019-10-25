@@ -22,7 +22,7 @@ var reg_no = "TDXBU";
 function submitnominateForm(e) {
     e.preventDefault();
     reg = reg_no + getInput('q3').slice(5);
-    saveNominateRec(new Date().toDateString(), reg_no, getInput('q1'), getInput('q2'), getInput('q3'), getInput('q4'), getInput('q5'), getInput('q6'));
+    saveNominateRec(new Date().toDateString(), reg, getInput('q1'), getInput('q2'), getInput('q3'), getInput('q4'), getInput('q5'), getInput('q6'));
     recSaved();
 }
 function saveNominateRec(time, reg_no, name, email, mobile, size, source, n_tickets) {
