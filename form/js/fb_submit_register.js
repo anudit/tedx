@@ -21,7 +21,7 @@ function getInput(id) {
 
 function submitnominateForm(e) {
     e.preventDefault();
-    saveNominateRec(new Date().toDateString(), getInput('q1'), getInput('q2'), getInput('q3'), getInput('q4'), getInput('q5'), getInput('q6'));
+    saveNominateRec(new Date().toDateString(), getInput('q1'), getInput('q2'), getInput('q3'), getInput('q4'), getInput('q5'), getInput('q6'), getInput('q7'));
     n_t = getInput('q6');
     frat = getInput('q4');
     var bu_price = 1000;
@@ -37,7 +37,7 @@ function submitnominateForm(e) {
     pay(getInput('q1'), getInput('q2'), getInput('q3'), amount);
     recSaved();
 }
-function saveNominateRec(time, name, email, mobile, fraternity, source, n_tickets) {
+function saveNominateRec(time, name, email, mobile, fraternity, source, n_tickets, size) {
     var newRec = nom_rec.push();
     newRec.set({
         time: time,
@@ -46,7 +46,8 @@ function saveNominateRec(time, name, email, mobile, fraternity, source, n_ticket
         phone: mobile,
         bu_frat: fraternity,
         source: source,
-        n_tickets: n_tickets
+        n_tickets: n_tickets,
+        t_shirt_size: size
     });
 }
 
