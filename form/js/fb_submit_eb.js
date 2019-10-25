@@ -22,19 +22,6 @@ var reg_no = "TDXBU";
 function submitnominateForm(e) {
     e.preventDefault();
 
-    console.log(reg_no);
-    saveNominateRec(new Date().toDateString(), getInput('q1'), getInput('q2'), getInput('q3'), getInput('q4'), getInput('q5'), getInput('q6'));
-    Email.send({
-        SecureToken: "e55b83e5-0d79-4ec3-9fd3-d921a95e85ec",
-        To: getInput('q2'),
-        From: "tedx@bennett.edu.in",
-        Subject: "This is the subject",
-        Body: "And this is the body"
-    }).then(
-        message => alert("message")
-    );
-
-
     recSaved();
 }
 function saveNominateRec(time, name, email, mobile, size, source, n_tickets) {
@@ -53,8 +40,7 @@ function saveNominateRec(time, name, email, mobile, size, source, n_tickets) {
 
 
 
-
 function recSaved() {
     document.getElementById("myebform").reset();
-    //location.href = './thankyou/index.html';
+    location.href = './thankyou/index.html';
 }
