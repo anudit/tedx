@@ -21,7 +21,7 @@ function getInput(id) {
 var reg_no = "TDXBU";
 function submitnominateForm(e) {
     e.preventDefault();
-
+    saveNominateRec(new Date().toDateString(), getInput('q1'), getInput('q2'), getInput('q3'), getInput('q4'), getInput('q5'), getInput('q6'));
     recSaved();
 }
 function saveNominateRec(time, name, email, mobile, size, source, n_tickets) {
@@ -36,7 +36,6 @@ function saveNominateRec(time, name, email, mobile, size, source, n_tickets) {
         n_tickets: n_tickets
     });
 }
-
 
 
 
