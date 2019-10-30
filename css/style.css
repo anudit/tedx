@@ -577,7 +577,7 @@
 [05] WHAT WE DO
 =========================================================================*/
 .whatwe{
-    height: -webkit-fill-available;;
+    height: fit-content;
 }
 .wedoContent{
     padding-top: 36vh;
